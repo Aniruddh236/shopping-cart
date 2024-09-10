@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+/* Main application */
+.app{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5px;
+}
+#leftPart{
+
+}
+#rightPart{
+  background-color: rgb(222, 228, 232);
+  display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* product list */
+.productList{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(max-width:900px){
+  .productList{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media(max-width:540px){
+  .productList{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+
+/* header */
+.header{
+  background-color: rgb(206, 206, 159);
+}
+
+.header p {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: xx-large ;
+}
+
+/* Shopping cart */
+
+.shoppingCart{
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.shoppingCartItem{
+  
+}
+
+.quantity,
+.totalPrice,
+.removeItem {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.quantity {
+  gap: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.totalPrice {
+  text-align: right;
+}
+
+@media(max-width:500px){
+  .quantity,
+.totalPrice{
+  display: block;
+}
 }
