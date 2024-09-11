@@ -7,7 +7,7 @@ export default function Header(){
             <p>Shopping Application</p>
             <div>
                 <NavLink to='/'>Home</NavLink>
-                <NavLink to='/cart'>Shopping Cart</NavLink>
+                <NavLink to='/shopping-cart'>Shopping Cart</NavLink>
             </div>
         </div>
     )

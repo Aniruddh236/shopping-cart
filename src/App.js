@@ -7,7 +7,7 @@ import ShoppingCart from './components/ShoppingCart';
 function App() {
   return (
     <>
-    <Routes>
+    <Routes basename="/shopping-cart">
       <Route path='/' element={<Home />} />
       <Route path='shopping-cart' element={<ShoppingCart />} />
     </Routes>
